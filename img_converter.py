@@ -24,7 +24,7 @@ def store_raw_images(path):
             os.remove(path + img)
 
 # store_raw_images('neg/')
-# store_raw_images('pos/')
+store_raw_images('pos/')
 
 def create_pos_n_neg(path):
     for img in os.listdir(path):
@@ -38,5 +38,5 @@ def create_pos_n_neg(path):
             with open('info.dat', 'a') as f:
                 f.write(line)
 
-create_pos_n_neg('neg/')
-create_pos_n_neg('pos/')
+# create_pos_n_neg('neg/')
+# create_pos_n_neg('pos/')

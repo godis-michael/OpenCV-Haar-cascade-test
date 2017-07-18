@@ -2,9 +2,9 @@ from cv2.cv2 import *
 from matplotlib import pyplot as plt
 import numpy as np
 
-marlboro_cascade = CascadeClassifier('first_test/marlboro-cascade.xml')
+marlboro_cascade = CascadeClassifier('cascade.xml')
 
-img = imread('1-afp.jpg', 1)
+img = imread('test_imgs/5.jpg', 1)
 gray = cvtColor(img, COLOR_BGR2GRAY)
 
 marlboros = marlboro_cascade.detectMultiScale(gray)
