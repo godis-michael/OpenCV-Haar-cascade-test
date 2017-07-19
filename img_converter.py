@@ -7,12 +7,12 @@ import os
 
 def store_raw_images(path):
 
-    new_name = 1
+    new_name = 16
     for img in os.listdir(path):
         try:
             # Grayscaling and resizin
             grayscaled = imread(path + img, IMREAD_GRAYSCALE)
-            resized = resize(grayscaled, (80,120)) if path[0:-1] == 'pos' else resize(grayscaled, (250,250))
+            resized = resize(grayscaled, (60,90)) if path[0:-1] == 'pos' else resize(grayscaled, (500,600))
             imwrite(path + path[0:-1] + '-' + str(new_name) + '.jpg', resized)
             new_name += 1
 
