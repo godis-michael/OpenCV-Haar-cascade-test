@@ -4,7 +4,7 @@ import numpy as np
 
 marlboro_cascade = CascadeClassifier('cascade.xml')
 
-img = imread('test_imgs/3.jpg', 1)
+img = imread('test_imgs/14.jpg', 1)
 gray = cvtColor(img, COLOR_BGR2GRAY)
 
 marlboros = marlboro_cascade.detectMultiScale(gray, 1.1, 3)

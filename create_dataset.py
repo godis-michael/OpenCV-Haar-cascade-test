@@ -64,7 +64,7 @@ if args.command in ('prepare-images', 'create-descriptions'):
         height = args.height if args.height else 600
     else:
         raise (TypeError("Type should be 'pos' or 'neg'. Usage example:\n"
-                         "user: python3 img_converter.py list -p positives/ -t pos"))
+                         "user: python3 create_dataset.py list -p positives/ -t pos"))
 
 # Progress bar
 
